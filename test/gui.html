@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gui Test</title>
+    <link rel="stylesheet" href="../gui/style.css">
+  </head>
+  <body>
+    <script type="module">
+      import * as Gui from '../gui/Gui.js';
+
+      const obj = {
+        num: 10,
+        rng: 0.8,
+        str: 'hello world',
+        sel: 'foo',
+        color: 0xffffff,
+        aColor: 0xffffff,
+        bool: true,
+        sub: {
+          num2: 2,
+        }
+      };
+      window.guiObj = obj;
+
+      const gui = new Gui.Gui();
+      gui.add(new Gui.Num(obj, 'num'));
+      gui.add(new Gui.Range(obj, 'rng'));
+      gui.add(new Gui.Str(obj, 'str'));
+      gui.add(new Gui.Select(obj, 'sel', ['foo', 'bar', 'baz']));
+      gui.add(new Gui.Color(obj, 'color'));
+      gui.add(new Gui.ColorAlpha(obj, 'aColor'));
+      gui.add(new Gui.Bool(obj, 'bool'));
+      const folder = new Gui.Folder();
+      folder.add(new Gui.Num(obj.sub, 'num2'));
+      gui.add(folder);
+      gui.add(new Gui.Btn('Click me', e => console.log('clicked')));
+      document.body.append(gui.domElement);
+    </script>
+  </body>
+</html>

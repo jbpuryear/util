@@ -1,0 +1,99 @@
+$bg-color: #222;
+$bg-light: #333;
+$outline: #443;
+$text-color: #EEC;
+$spacing: 8px;
+
+.jpgui {
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: $text-color;
+    font-family: monospace;
+  }
+
+  input, select, button {
+    background-color: $bg-light;
+    padding: 2px;
+    border: 1px solid $outline;
+    border-radius: 4px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+
+  background-color: $bg-color;
+}
+
+
+.jpgui_folder_header {
+  background-color: $bg-light;
+}
+
+
+.jpgui_folder_header {
+  display: block;
+  padding: $spacing;
+}
+
+
+.jpgui_folder_children {
+  padding-left: $spacing;
+  border-left: 1px solid $outline;
+}
+
+
+.jpgui_root {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 400px;
+  padding: $spacing;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+
+.jpgui_control {
+  display: flex;
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+  border-top: 1px dashed $outline;
+  min-width: 100px;
+}
+
+
+.jpgui_control:first-child {
+  border-top: none;
+}
+
+
+.jpgui_inputs {
+  flex-grow: 1;
+}
+
+
+.jpgui_inputs input:not([type='checkbox']) {
+  display: block;
+  width: 100%;
+}
+
+
+.jpgui_label {
+  flex: 0 1 33%;
+}
+
+
+.jpgui_button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+
+
+.jpgui_hidden {
+  display: none;
+}

@@ -1,0 +1,25 @@
+TODO
+dist/
+__pycache__
+
+# System and IDE files
+thumbs.db
+.ds_store
+.idea
+*.suo
+*.sublime-project
+*.sublime-workspace
+
+# Vendors
+node_modules/
+
+# Build
+*npm-debug.log
+
+# VIM
+*~
+*.swp
+*.swo
+
+# Tiled
+*.tiled-session

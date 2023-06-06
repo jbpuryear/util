@@ -1,0 +1,81 @@
+.jpgui {
+  background-color: #222;
+}
+.jpgui * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: #EEC;
+  font-family: monospace;
+}
+.jpgui input, .jpgui select, .jpgui button {
+  background-color: #333;
+  padding: 2px;
+  border: 1px solid #443;
+  border-radius: 4px;
+}
+.jpgui button {
+  width: 100%;
+  text-align: center;
+}
+
+.jpgui_folder_header {
+  background-color: #333;
+}
+
+.jpgui_folder_header {
+  display: block;
+  padding: 8px;
+}
+
+.jpgui_folder_children {
+  padding-left: 8px;
+  border-left: 1px solid #443;
+}
+
+.jpgui_root {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 400px;
+  padding: 8px;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.jpgui_control {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top: 1px dashed #443;
+  min-width: 100px;
+}
+
+.jpgui_control:first-child {
+  border-top: none;
+}
+
+.jpgui_inputs {
+  flex-grow: 1;
+}
+
+.jpgui_inputs input:not([type=checkbox]) {
+  display: block;
+  width: 100%;
+}
+
+.jpgui_label {
+  flex: 0 1 33%;
+}
+
+.jpgui_button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #fff;
+}
+
+.jpgui_hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
