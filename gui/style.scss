@@ -2,7 +2,8 @@ $bg-color: #222;
 $bg-light: #333;
 $outline: #443;
 $text-color: #EEC;
-$spacing: 8px;
+$spacing: 2px;
+$indent: 8px;
 
 .jpgui {
   * {
@@ -30,6 +31,7 @@ $spacing: 8px;
 
 
 .jpgui_folder_header {
+  border-top: 1px solid $outline;
   background-color: $bg-light;
 }
 
@@ -41,7 +43,7 @@ $spacing: 8px;
 
 
 .jpgui_folder_children {
-  padding-left: $spacing;
+  padding-left: $indent;
   border-left: 1px solid $outline;
 }
 
@@ -88,9 +90,8 @@ $spacing: 8px;
 
 
 .jpgui_button {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  background-color: #fff;
+  margin-top: $spacing;
+  margin-bottom: $spacing;
 }
 
 
